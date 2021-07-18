@@ -1,0 +1,395 @@
+*::selection{
+  background:#seashell; color: #F0FFF0;
+}
+*{
+  font-family: 'raleway', cursive
+}
+
+.footer{
+  background-color:lightgrey; color: #fff;
+  font-weight: 700;
+  padding:3%;
+  text-align: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: whitesmoke;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 10em;
+  height: 10em;
+  position: relative;
+  background: snow;
+  border-radius: 50%;
+}
+.container .dot {
+  background: darkred;
+  content: "";
+  border-radius: 0.5em;
+  margin-top: -0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1em;
+  height: 1em;
+  animation-name: bounce;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  transition-timing-function: cubic-bezier(0, 0.99, 0, 0.1);
+}
+.container-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.dot-a {
+  transform: rotate(0deg);
+}
+.dot-a .dot {
+  animation-delay: 0ms;
+}
+.dot-b {
+  transform: rotate(-22.5deg);
+}
+.dot-b .dot {
+  animation-delay: -187.5ms;
+}
+.dot-c {
+  transform: rotate(-45deg);
+}
+.dot-c .dot {
+  animation-delay: -375ms;
+}
+.dot-d {
+  transform: rotate(-67.5deg);
+}
+.dot-d .dot {
+  animation-delay: -562.5ms;
+}
+.dot-e {
+  transform: rotate(-90deg);
+}
+.dot-e .dot {
+  animation-delay: -750ms;
+}
+.dot-f {
+  transform: rotate(-112.5deg);
+}
+.dot-f .dot {
+  animation-delay: -937.5ms;
+}
+.dot-g {
+  transform: rotate(-135deg);
+}
+.dot-g .dot {
+  animation-delay: -1125ms;
+}
+.dot-h {
+  transform: rotate(-157.5deg);
+}
+.dot-h .dot {
+  animation-delay: -1312.5ms;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translatey(0);
+ }
+  50% {
+    transform: translatey(10em);
+ }
+}
+
+
+
+
+.col-sm{
+  padding:0px;
+}
+
+.hero-content{
+  height: 105vh;
+  background-color: #seashell;
+  color: #ffffff;
+  /* padding: 3rem; */
+  border-bottom-left-radius: 32rem;
+  border-bottom-right-radius: 32rem;
+  margin-bottom: 1vh;
+  margin:0px;
+}
+
+    
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 70s;
+    animation-duration:7570s;
+  }
+
+/*the animation definition*/
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+  50% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+  50% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight
+}
+
+/* *************     zoomin        ******************** */
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5)
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5)
+  }
+  50% {
+    opacity: 1
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.5, .5, .5);
+    -ms-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5)
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: scale3d(.5, .5, .5);
+    -ms-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5)
+  }
+  50% {
+    opacity: 1
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn
+}
+
+.selectuser{
+  padding:25% auto;
+  margin:0 auto;
+}
+.userdetails{
+  margin:0 auto;
+  padding:0px 45px;
+}
+#myTable{
+  border: 2px solid lavender;
+  justify-content : center;
+  width: 90%;
+  font-size: 18px;
+margin:2px 10px;
+  font-weight: 400;}
+
+table tr td {
+  border:2px  solid lavender;
+  text-align: center;
+  justify-content: center;
+}
+table tr th {
+  border:2px lavender;
+  padding:1.5% 3%;
+  color:teal;
+  background-color: lavender;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.btn-outline-primary{
+  border-color: lightgrey;
+  color:lightgrey;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open .dropdown-toggle.btn-outline-primary {
+  background-color: lightgrey;
+  border-color: lightgrey;
+  color:white;
+} 
+.button{
+  background-color: teal;
+  border:2px black;
+  color:white;
+  font-weight: 600;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button:hover, .button:focus, .button:active, .button.active, .open .dropdown-toggle.button {
+  border: 2px lavenderblush;
+  color:#800000;
+  background-color: transparent;
+  font-weight: 600;
+} 
+select{
+  border:2px solid lightgrey ;
+  padding:2%;
+  border-radius:3px;
+  width:35%;
+}
+input{
+  border:2px solid lightgrey;
+  padding:2%;
+  border-radius:3px;
+  width:35%;
+
+}
+#myinput input:focus, input:active{
+  border:none;
+
+}
+/*--------------create -------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+  height: 100%;
+  /*Image only BG fallback*/
+  
+  /*background = gradient + image pattern combo*/
+  
+    
+  
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+  height:100%;
+  background: snow;
+
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+/*form styles*/
+#msform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: teal;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
